@@ -3,7 +3,6 @@
 ## Tools used in this project
 * [hydra](https://hydra.cc/): Manage configuration files - [article](https://mathdatasimplified.com/stop-hard-coding-in-a-data-science-project-use-configuration-files-instead/)
 * [pdoc](https://github.com/pdoc3/pdoc): Automatically create an API documentation for your project
-* [pre-commit plugins](https://pre-commit.com/): Automate code reviewing formatting
 {% if cookiecutter.dependency_manager == "poetry" %}
 * [Poetry](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f): Dependency management - [article](https://mathdatasimplified.com/poetry-a-better-way-to-manage-python-dependencies/)
 {% endif %}
@@ -32,7 +31,6 @@
 {% if cookiecutter.dependency_manager == "pip" -%}
 ├── pyproject.toml                  # Configure black
 {% elif cookiecutter.dependency_manager == "poetry" -%}
-├── .pre-commit-config.yaml         # configurations for pre-commit
 ├── pyproject.toml                  # dependencies for poetry
 {%- endif %}
 ├── README.md                       # describe your project

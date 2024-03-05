@@ -6,11 +6,9 @@ deps:
 	{% if cookiecutter.dependency_manager == "poetry" %}
 	@echo "Installing dependencies..."
 	poetry install --no-root
-	poetry run pre-commit install
 	{% else %}
 	@echo "Installing dependencies..."
 	pip install -r requirements.txt
-	pre-commit install
 	{% endif %}
 tests:
 	pytest
