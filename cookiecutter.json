@@ -1,6 +1,7 @@
 {
     "project_name": "Project Name",
     "__directory_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "__package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "author_name": "Your Name",
     "dependency_manager": ["poetry", "pip"],
     "compatible_python_versions": ["^3.11", "^3.12"]

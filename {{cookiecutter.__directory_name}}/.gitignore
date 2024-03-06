@@ -99,4 +99,4 @@ data/*/*
 notebooks/*
 
 # Dynaconf secrets
-.secrets.*
+configs/.secrets.*

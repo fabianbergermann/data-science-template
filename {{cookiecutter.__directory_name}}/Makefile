@@ -5,7 +5,7 @@ init:
 	git init --initial-branch=main
 	{% if cookiecutter.dependency_manager == "poetry" %}
 	@echo "Installing dependencies..."
-	poetry install --no-root
+	poetry install
 	poetry shell
 	{% else %}
 	@echo "Installing dependencies..."
