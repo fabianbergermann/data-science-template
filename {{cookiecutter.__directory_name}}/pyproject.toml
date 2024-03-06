@@ -7,11 +7,12 @@ authors = ["{{ cookiecutter.author_name }}"]
 
 [tool.poetry.dependencies]
 python = "{{ cookiecutter.compatible_python_versions }}"
-hydra-core = "*"
+dynaconf = "*"
 
-ipykernel = "^6.28.0"
 [tool.poetry.group.docs.dependencies]
-pdoc = "*"
+mkdocs = { version = "*", extras = ["python"] }
+mkdocstrings =  { version = "*", extras = ["python"] }
+mkdocs-material = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"

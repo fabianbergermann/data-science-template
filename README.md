@@ -9,7 +9,7 @@ This repository provides a template that incorporates best practices to create a
 
 ## Tools used in this project
 * [hydra](https://hydra.cc/): Manage configuration files - [article](https://mathdatasimplified.com/stop-hard-coding-in-a-data-science-project-use-configuration-files-instead/)
-* [pdoc](https://github.com/mitmproxy/pdoc): Automatically create an API documentation for your project
+* [mkdocs](https://www.mkdocs.org): Create documentation for your project
 * [Poetry](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f): Dependency management - [article](https://mathdatasimplified.com/poetry-a-better-way-to-manage-python-dependencies/)
 
 ## How to use this project

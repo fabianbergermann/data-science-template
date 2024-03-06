@@ -1,5 +1,6 @@
 -r requirements.txt
-notebook>=6.4.10
-pytest>=6.2.5
-ipykernel>=6.28.0
-pdoc
+mkdocs[python]
+mkdocstrings
+mkdocs-material
+
+pytest
