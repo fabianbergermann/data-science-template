@@ -1,14 +1,14 @@
-.PHONY: tests docs init format lint
+.PHONY: tests docs init format lint style fullcheck
 
 init:
 	@echo "Initializing Git..."
 	git init --initial-branch=main
-	{% if cookiecutter.dependency_manager == "poetry" %}
 	@echo "Installing dependencies..."
+	{% if cookiecutter.dependency_manager == "poetry" %}
+	poetry config --local virtualenvs.in-project true
 	poetry install
 	poetry shell
 	{% else %}
-	@echo "Installing dependencies..."
 	pip install -r requirements.txt
 	{% endif %}
 
@@ -16,11 +16,16 @@ tests:
 	pytest
 
 docs:
-	mkdocs build
-	mkdocs serve
+	cd docs && mkdocs build
+	cd docs && mkdocs serve
 
 format:
 	ruff format
 
 lint:
 	ruff check
+
+style: format
+	ruff check --fix
+
+fullcheck: style tests docs

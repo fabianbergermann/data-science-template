@@ -4,3 +4,4 @@ mkdocstrings
 mkdocs-material
 
 pytest
+ruff

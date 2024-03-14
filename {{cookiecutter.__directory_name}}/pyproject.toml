@@ -4,6 +4,7 @@ name = "{{ cookiecutter.__package_name }}"
 version = "0.1.0"
 description = ""
 authors = ["{{ cookiecutter.author_name }}"]
+readme = "README.md"
 packages = [
     { include = "{{ cookiecutter.__package_name }}" },
     { include = "project_utils" },

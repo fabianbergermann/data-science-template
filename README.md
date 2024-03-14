@@ -1,29 +1,31 @@
-[![View article](https://img.shields.io/badge/Data_Science_Simplified-View_article-blue)](https://mathdatasimplified.com/2023/06/17/how-to-structure-a-data-science-project-for-readability-and-transparency-2/) [![View on YouTube](https://img.shields.io/badge/YouTube-Watch%20on%20Youtube-red?logo=youtube)](https://youtu.be/TzvcPi3nsdw) 
+# Cookiecutter Data Science
 
-# Data Science Cookie Cutter
+_A logical, reasonably standardized but flexible project structure for doing and sharing data science work._
 
-## Why?
-It is important to structure your data science project based on a certain standard so that your teammates can easily maintain and modify your project.
-
-This repository provides a template that incorporates best practices to create a maintainable and reproducible data science project.  
+> **Important Note**
+> 
+>This template is an opinionated blend of two established Data Science Cookiecutter templates, who have done an amazing work:
+> - **Cookiecutter Data Science (CCDS), v2 [Link](https://github.com/drivendata/cookiecutter-data-science/tree/v2)**
+> - **Data Science Template** [Link](https://github.com/khuyentran1401/data-science-template)
+> 
+> It is highly recommended to read through the documentation of these two projects
 
 ## Tools used in this project
-* [hydra](https://hydra.cc/): Manage configuration files - [article](https://mathdatasimplified.com/stop-hard-coding-in-a-data-science-project-use-configuration-files-instead/)
-* [mkdocs](https://www.mkdocs.org): Create documentation for your project
-* [Poetry](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f): Dependency management - [article](https://mathdatasimplified.com/poetry-a-better-way-to-manage-python-dependencies/)
+* [Dynaconf](https://www.dynaconf.com/): Manage configuration files 
+* [MkDocs](https://www.mkdocs.org): Create documentation for your project
+* [Poetry](https://python-poetry.org/): Dependency management - [setup guide](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f), [comparison with pip and conda](https://mathdatasimplified.com/poetry-a-better-way-to-manage-python-dependencies/)
 
-## How to use this project
+## Installation
+Since this is a cross-project utility application, we recommend installing it with [pipx](https://pypa.github.io/pipx/). 
+Installation command options (further installation options in the [cookiecutter docs](https://cookiecutter.readthedocs.io/en/stable/installation.html) ):
 
-Install Cookiecutter:
+### With pipx from PyPI (recommended)
 ```bash
-pip install cookiecutter
+pipx install cookiecutter
 ```
 
+## Starting a new project
 Create a project based on the template:
 ```bash
 cookiecutter https://github.com/khuyentran1401/data-science-template
 ```
-
-## Resources for a detailed explanation of this template:
-- [Article](https://mathdatasimplified.com/how-to-structure-a-data-science-project-for-readability-and-transparency-2/)
-- [Video](https://youtu.be/TzvcPi3nsdw)
