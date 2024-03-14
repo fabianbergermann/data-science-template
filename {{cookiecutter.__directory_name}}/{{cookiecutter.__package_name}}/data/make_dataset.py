@@ -1,14 +1,11 @@
 from typing import Literal
 
 import click
-from config import settings
 from dotenv import find_dotenv, load_dotenv
+
+from config import settings
 from project_utils import logger
 from project_utils.utils import get_project_root
-
-
-def train_model():
-    """Function to train the model"""
 
 
 def main(environment: Literal["staging", "production"]):
