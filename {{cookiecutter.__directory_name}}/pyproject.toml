@@ -12,6 +12,9 @@ packages = [
 [tool.poetry.dependencies]
 python = "{{ cookiecutter.compatible_python_versions }}"
 dynaconf = "*"
+python-dotenv = "*"
+click = "*"
+loguru = "*"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = { version = "*", extras = ["python"] }
