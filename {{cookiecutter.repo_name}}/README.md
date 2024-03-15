@@ -43,7 +43,8 @@ In the project root (make sure no virtual env is active)
 make init  # init git and install all dependencies
 make style  # check and format, using ruff
 make tests  # check that all is working
-make docs  # compile and (locally) serve docs
+make docs  # compile docs. To serve locally, run: make servedocs
+make all  # this is a shortcut for (make) style, tests, docs
 ```
 
 Or, follow this full description 
