@@ -6,6 +6,8 @@ init: git-init install
 git-init:
 	@echo "Initializing Git..."
 	git init --initial-branch=main
+	git add .
+	git commit -m "Initial commit, using the Cookiecutter Data Science template"
 
 install:
 	@echo "Installing dependencies..."
