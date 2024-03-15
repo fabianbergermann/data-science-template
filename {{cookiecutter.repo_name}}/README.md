@@ -24,6 +24,9 @@
 ├── tests                           # store tests
 ├── Makefile                        # store useful commands to set up the environment
 ├── README.md                       # describe your project
+{% if cookiecutter.use_sqlfluff == "yes" -%}
+├── .sqlfluff                       # config file for SQL formatter SQLFluff
+{%- endif %}
 ├── config.py                       # entry point for configs
 {% if cookiecutter.dependency_manager == "pip" -%}
 ├── pyproject.toml                  # Configure black

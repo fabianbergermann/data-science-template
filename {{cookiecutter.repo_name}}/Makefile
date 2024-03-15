@@ -1,4 +1,4 @@
-.PHONY: tests docs servedocs init format lint style all install
+.PHONY: tests docs servedocs init format lint all install {% if cookiecutter.use_sqlfluff == "yes" %} format-sql {% endif %}
 
 
 init: git-init install
@@ -28,16 +28,18 @@ docs:
 servedocs:
 	cd docs && mkdocs serve
 
-format:
-	ruff format
-
 lint:
 	ruff check
 
-style:
+format:
 	ruff check --fix
 	ruff format
 
+{% if cookiecutter.use_sqlfluff == "yes" %}
+format-sql:
+	sqlfluff fix .
+
+{% endif %}
 .DEFAULT_GOAL := all
 
-all: style tests docs
+all: format tests docs

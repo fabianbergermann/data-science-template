@@ -5,6 +5,10 @@
     "description": "A short project description",
     "author_name": "Your Name",
     "dependency_manager": ["poetry", "pip"],
+    "use_sqlfluff": ["yes", "no"],
     "compatible_python_versions": ["^3.11", "^3.12"],
-    "Done": "All questions ansered. Now press enter, then go to ./{{ cookiecutter.repo_name }}/ and run make init to get started"
+    "Done": "All questions ansered. Now press enter, then go to ./{{ cookiecutter.repo_name }}/ and run make init to get started",
+    "__prompts__": {
+        "use_sqlfluff": "Do you want to use SQLFluff for SQL linting?"
+    }
 }

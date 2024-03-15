@@ -25,6 +25,9 @@ mkdocs-material = "*"
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
 ruff = "*"
+{% if cookiecutter.use_sqlfluff == "yes" -%}
+sqlfluff = "*"
+{% endif -%}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
