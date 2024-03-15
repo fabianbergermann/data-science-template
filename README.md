@@ -27,5 +27,5 @@ pipx install cookiecutter
 ## Starting a new project
 Create a project based on the template:
 ```bash
-cookiecutter https://github.com/khuyentran1401/data-science-template
+cookiecutter https://github.com/fabianbergermann/data-science-template
 ```
