@@ -102,4 +102,4 @@ notebooks/*
 configs/.secrets.*
 
 # MkDocs build
-docs/docs/site
+docs/site
