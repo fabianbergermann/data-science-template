@@ -14,6 +14,7 @@ _A logical, reasonably standardized but flexible project structure for doing and
 * [Dynaconf](https://www.dynaconf.com/): Manage configuration files 
 * [MkDocs](https://www.mkdocs.org): Create documentation for your project
 * [Poetry](https://python-poetry.org/): Dependency management - [setup guide](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f), [comparison with pip and conda](https://mathdatasimplified.com/poetry-a-better-way-to-manage-python-dependencies/)
+* [ruff](https://docs.astral.sh/ruff/): An extremely fast Python linter and code formatter, all in one, replaces: Black, isort, Flake8
 
 ## Installation
 Since this is a cross-project utility application, we recommend installing it with [pipx](https://pypa.github.io/pipx/). 
