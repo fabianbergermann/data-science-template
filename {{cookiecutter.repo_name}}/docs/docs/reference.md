@@ -1,4 +1,4 @@
 
 # Code Reference
 
-::: {{ cookiecutter.__package_name }}
+::: {{ cookiecutter.package_name }}

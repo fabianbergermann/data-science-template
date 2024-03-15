@@ -1,12 +1,12 @@
 {%- if cookiecutter.dependency_manager == "poetry" %}
 [tool.poetry]
-name = "{{ cookiecutter.__package_name }}"
+name = "{{ cookiecutter.package_name }}"
 version = "0.1.0"
 description = ""
 authors = ["{{ cookiecutter.author_name }}"]
 readme = "README.md"
 packages = [
-    { include = "{{ cookiecutter.__package_name }}" },
+    { include = "{{ cookiecutter.package_name }}" },
     { include = "project_utils" },
 ]
 

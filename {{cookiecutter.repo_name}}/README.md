@@ -20,7 +20,7 @@
 ├── notebooks                       # store notebooks
 ├── references                      # Data dictionaries, manuals, and all other explanatory materials
 ├── reports                         # Generated analysis as HTML, PDF, LaTeX, etc.
-├── {{ cookiecutter.__package_name }}                # store source code
+├── {{ cookiecutter.package_name }}                # store source code
 ├── tests                           # store tests
 ├── Makefile                        # store useful commands to set up the environment
 ├── README.md                       # describe your project

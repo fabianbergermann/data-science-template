@@ -1,6 +1,6 @@
 from click.testing import CliRunner
 
-from {{ cookiecutter.__package_name }}.data.make_dataset import main, main_cli
+from {{ cookiecutter.package_name }}.data.make_dataset import main, main_cli
 
 
 def test_main_cli():
