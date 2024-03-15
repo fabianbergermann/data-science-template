@@ -100,3 +100,6 @@ notebooks/*
 
 # Dynaconf secrets
 configs/.secrets.*
+
+# MkDocs build
+docs/docs/site
