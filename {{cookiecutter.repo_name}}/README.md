@@ -32,12 +32,8 @@
 ├── .sqlfluff                       # config file for SQL formatter SQLFluff
 {%- endif %}
 ├── config.py                       # entry point for configs
-{% if cookiecutter.dependency_manager == "pip" -%}
-├── pyproject.toml                  # Configure black
-{% elif cookiecutter.dependency_manager == "poetry" -%}
-├── pyproject.toml                  # dependencies for poetry
-{%- endif %}
-└──  .gitignore                      # ignore files that cannot commit to Git
+├── pyproject.toml                  # Python project configuration file. Configures tools like Poetry, ruff, sqlfluff etc.
+└── .gitignore                      # ignore files that cannot commit to Git
 ```
 
 ## Set up the environment
