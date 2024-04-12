@@ -1,4 +1,5 @@
 import os
+import shutil
 
 
 def remove_unused_files():
@@ -7,6 +8,8 @@ def remove_unused_files():
         os.remove("requirements-dev.txt")
     if "{{ cookiecutter.use_sqlfluff }}" == "no":
         os.remove(".sqlfluff")
+    if "{{ cookiecutter.use_github_actions }}" == "no":
+        shutil.rmtree(".github")
 
 
 if __name__ == "__main__":
